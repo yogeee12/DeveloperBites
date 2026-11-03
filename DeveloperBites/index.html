@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bite Developer</title>
+    <meta
+      name="description"
+      content="Bite Developer — a playful neighbourhood street-food brand serving affordable, fresh, flavour-first bites with a developer's spirit."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <p>commit -m 'No Bugs. Just Good Bites'</p>
+    </div>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="#home" class="brand" aria-label="Bite Developer home">
+          <span class="brand-mark">
+            <span class="brand-bite">◉</span>
+          </span>
+          <span class="brand-text">BITE DEVELOPER</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#story">Our Story</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+          <a href="#menu" class="btn btn-primary nav-cta">Explore the Menu</a>
+        </div>
+
+        <a href="#menu" class="cart-pill" aria-label="Open cart">
+          <span>Cart</span>
+          <strong>0</strong>
+        </a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow mono">// build status: hungry</p>
+            <h1>WE DEVELOP SOFTWARE.<br />WE SERVE GOOD BITES.</h1>
+            <p class="lead">
+              From writing code to creating cravings, we believe great things are built with
+              passion, creativity and a little experimentation. Welcome to Bite Developer —
+              your neighbourhood destination for good food and good vibes.
+            </p>
+            <div class="tagline mono">commit -m 'No Bugs. Just Good Bites'</div>
+            <div class="hero-actions">
+              <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+              <a href="#story" class="btn btn-secondary">Our Story</a>
+            </div>
+            <div class="mini-stat-row" aria-label="Business details">
+              <div>
+                <strong>Local</strong>
+                <span>Indore, MP</span>
+              </div>
+              <div>
+                <strong>Fresh</strong>
+                <span>Made daily</span>
+              </div>
+              <div>
+                <strong>Friendly</strong>
+                <span>Affordable bites</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured Garadu product">
+            <div class="visual-badge mono">Garadu v1.0</div>
+            <div class="photo-card">
+              <img
+                src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80"
+                alt="Fresh Indori style Garadu snack served in a plate"
+              />
+            </div>
+            <div class="floating-chip chip-one mono">#build_ready</div>
+            <div class="floating-chip chip-two mono">#crunch_mode</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="story section">
+        <div class="container story-grid">
+          <div class="story-copy">
+            <p class="section-kicker mono">// about the project</p>
+            <h2>A LITTLE CODE. A LOT OF FLAVOUR.</h2>
+            <p>
+              Bite Developer started with a simple idea: why should creativity stop at the
+              screen?
+            </p>
+            <p>
+              As a software developer, I spend my days building things with code. But outside
+              the world of programming, I enjoy experimenting with food, flavours and ideas.
+            </p>
+            <p>
+              That's how Bite Developer was born — a place where technology meets taste.
+            </p>
+            <p>
+              We believe good food doesn't need to be expensive or complicated. It just needs
+              to be made with care, served fresh and enjoyed together.
+            </p>
+            <p>
+              Today, we're starting with a local favourite: Indori Garadu. Tomorrow, who knows
+              what we'll develop next?
+            </p>
+          </div>
+          <div class="story-panel">
+            <div class="terminal-box">
+              <div class="terminal-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="terminal-body mono">
+                <p>$ ./check_hunger</p>
+                <p>&gt; Hunger detected.</p>
+                <p>&gt; Recommendation: Garadu v1.0</p>
+                <p>&gt; Action: Grab a bite!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="menu section">
+        <div class="container">
+          <div class="section-head">
+            <p class="section-kicker mono">// current build</p>
+            <h2>OUR CURRENT BUILD</h2>
+            <p>Every good product starts with a great first version.</p>
+          </div>
+
+          <div class="menu-grid">
+            <article class="product-card active" data-product="v1" data-title="CLASSIC BUILD" data-version="Garadu v1.0" data-price="₹ TBD" data-badge="Available on request" data-description="Classic Indori-style Garadu, freshly prepared with traditional spices, tangy flavours and the crunch we all love." data-image="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80">
+              <div class="card-image-wrap">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Classic garadu snack" />
+              </div>
+              <div class="product-content">
+                <div class="product-meta">
+                  <span class="mono product-label">PRODUCT 01</span>
+                  <span class="mono product-badge badge-available">Available on request</span>
+                </div>
+                <h3>CLASSIC BUILD</h3>
+                <p class="mono version-tag">Garadu v1.0</p>
+                <p class="description">Classic Indori-style Garadu, freshly prepared with traditional spices, tangy flavours and the crunch we all love.</p>
+                <div class="product-footer">
+                  <strong>₹ TBD</strong>
+                  <button class="mini-btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-product="v2" data-title="HOTFIX" data-version="Garadu v2.0" data-price="₹ TBD" data-badge="Currently unavailable" data-description="A spicy upgrade to the classic! A bolder seasoning combination for people who like their snacks with extra heat." data-image="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=900&q=80">
+              <div class="card-image-wrap">
+                <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=900&q=80" alt="Spicy garadu snack" />
+              </div>
+              <div class="product-content">
+                <div class="product-meta">
+                  <span class="mono product-label">PRODUCT 02</span>
+                  <span class="mono product-badge badge-unavailable">Currently unavailable</span>
+                </div>
+                <h3>HOTFIX</h3>
+                <p class="mono version-tag">Garadu v2.0</p>
+                <p class="description">A spicy upgrade to the classic! A bolder seasoning combination for people who like their snacks with extra heat.</p>
+                <div class="product-footer">
+                  <strong>₹ TBD</strong>
+                  <button class="mini-btn" type="button">Add to cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="version-panel" aria-live="polite">
+            <div class="selector-copy">
+              <p class="section-kicker mono">// version selector</p>
+              <h3>Pick your preferred build</h3>
+            </div>
+            <div class="selector-actions" aria-label="Select a product version">
+              <button class="version-btn active" type="button" data-product="v1">Garadu v1.0</button>
+              <button class="version-btn" type="button" data-product="v2">Garadu v2.0</button>
+            </div>
+            <div class="selected-product">
+              <div class="selected-image-wrap">
+                <img id="selected-image" src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Selected Garadu product" />
+              </div>
+              <div class="selected-content">
+                <span class="mono product-badge" id="selected-badge">Available on request</span>
+                <h4 id="selected-title">CLASSIC BUILD</h4>
+                <p class="mono" id="selected-version">Garadu v1.0</p>
+                <p id="selected-description">Classic Indori-style Garadu, freshly prepared with traditional spices, tangy flavours and the crunch we all love.</p>
+                <div class="selected-footer">
+                  <strong id="selected-price">₹ TBD</strong>
+                  <a href="#contact" class="btn btn-primary small">Order via WhatsApp</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="future section">
+        <div class="container">
+          <div class="section-head narrow">
+            <p class="section-kicker mono">// roadmap</p>
+            <h2>MORE FEATURES COMING SOON</h2>
+            <p>Our menu is always under development. We're experimenting with new flavours and snacks. Your next favourite bite might be our next release.</p>
+          </div>
+
+          <div class="future-grid">
+            <article class="future-card">
+              <span class="future-tag">Coming Soon</span>
+              <h3>Debug Fries</h3>
+            </article>
+            <article class="future-card">
+              <span class="future-tag">Coming Soon</span>
+              <h3>Crunch.exe</h3>
+              <p>Corn snacks</p>
+            </article>
+            <article class="future-card">
+              <span class="future-tag">Coming Soon</span>
+              <h3>Sandwich Stack</h3>
+            </article>
+            <article class="future-card">
+              <span class="future-tag">Coming Soon</span>
+              <h3>Sip.exe</h3>
+              <p>Beverages</p>
+            </article>
+          </div>
+
+          <div class="console-strip mono">
+            <p>&gt; npm install happiness</p>
+            <p>&gt; developing_new_flavours...</p>
+            <p>&gt; status: IN_PROGRESS</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="reasons section">
+        <div class="container">
+          <div class="section-head narrow">
+            <p class="section-kicker mono">// why us</p>
+            <h2>BUILT DIFFERENT. SERVED FRESH.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">01</div>
+              <h3>Affordable Bites</h3>
+              <p>Good food that doesn't empty your wallet.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">02</div>
+              <h3>Freshly Prepared</h3>
+              <p>Food prepared with attention and care.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">03</div>
+              <h3>Flavour Experiments</h3>
+              <p>New ideas and exciting combinations.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon">04</div>
+              <h3>Good Company</h3>
+              <p>A friendly place to enjoy snacks with friends.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="interactive section">
+        <div class="container interactive-grid">
+          <div class="terminal-panel panel-box">
+            <p class="section-kicker mono">// food status terminal</p>
+            <div class="terminal-box large-terminal">
+              <div class="terminal-header">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="terminal-body mono">
+                <p>$ ./check_hunger</p>
+                <p>&gt; Hunger detected.</p>
+                <p>&gt; Recommendation: Garadu v1.0</p>
+                <p>&gt; Action: Grab a bite!</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="poll-panel panel-box">
+            <p class="section-kicker mono">// flavour feedback</p>
+            <h3>Which feature should we develop next?</h3>
+            <div class="poll-options" role="listbox" aria-label="Feature poll options">
+              <button type="button" class="poll-option" data-option="fries">
+                <span>Debug Fries</span>
+                <strong>0</strong>
+              </button>
+              <button type="button" class="poll-option" data-option="corn">
+                <span>Crunch.exe</span>
+                <strong>0</strong>
+              </button>
+              <button type="button" class="poll-option" data-option="sandwich">
+                <span>Sandwich Stack</span>
+                <strong>0</strong>
+              </button>
+              <button type="button" class="poll-option" data-option="beverage">
+                <span>Sip.exe</span>
+                <strong>0</strong>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery section">
+        <div class="container">
+          <div class="section-head narrow">
+            <p class="section-kicker mono">// gallery</p>
+            <h2>SNACKS WORTH RETURNING FOR</h2>
+          </div>
+          <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Street food on a plate" />
+            <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=800&q=80" alt="Fresh snack close-up" />
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=800&q=80" alt="Food styling and vibrant flavours" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#home" class="brand footer-brand">
+            <span class="brand-mark">
+              <span class="brand-bite">◉</span>
+            </span>
+            <span class="brand-text">BITE DEVELOPER</span>
+          </a>
+          <p>Affordable, playful street food inspired by developer culture.</p>
+        </div>
+
+        <div>
+          <h3>Find us</h3>
+          <ul>
+            <li>Indore, Madhya Pradesh</li>
+            <li>Instagram: @bitedeveloper</li>
+            <li>WhatsApp: Message us</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-actions">
+            <a href="https://wa.me/919999999999?text=Hi%20Bite%20Developer%2C%20I%27d%20like%20to%20order%20a%20bite." class="btn btn-primary small" target="_blank" rel="noreferrer">WhatsApp</a>
+            <a href="https://www.instagram.com/" class="btn btn-secondary small" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Bite Developer — built with curiosity, cravings and a little caffeine.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
